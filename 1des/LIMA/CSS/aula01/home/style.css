@@ -1,0 +1,51 @@
+/*linha de comentario é igual a c.
+*/
+
+/* @import url('https://fonts.googleapis.com/css2? family= Silkscreen & display=swap');
+*/
+p{
+    color: azure;
+    background-color: purple;
+    font-family: arial; 
+
+}
+
+#texto {
+    color:azure;
+    background-color:blueviolet;
+    font-family: "arial";
+    font-size: 50px;
+    
+}
+
+.titulo {
+    color:rgb(198, 186, 218);
+    font-family: "verdana";
+    font-size: 30px;
+    background-color: rgba(115,38,173, .5);
+    width: 500px;
+    height: 500px;
+    border: 10px dotted purple;
+    border-radius: 15px; 
+
+    /*radius serve pra arredondar as pontas da borda*/
+    /*configurações das bordas
+    dotted - bolinhas
+    dashed - traços
+    double - duas linhas finas
+    solid - borda solida
+    goove - borda sombreada de todos os lados
+    inset - borda sombreada em cima
+    outset - borda sombreada em baixo
+    */
+}
+
+body {
+    background-image: url("../assets/fundo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pao {
+    font-size: 50px;
+}

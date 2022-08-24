@@ -1,0 +1,19 @@
+Softwares básicos
+	Gerações de Sistemas operacionais
+		0 - Linguagens de programação (Tradução da Linguagem Humana X Máquina)
+		1 - Sistemas Operacionais - Interpretadores de Comandos (Command.com)
+		2 - Sistemas Operacionais - Gerenciador de Processos (Programas)
+		3 - Sistemas Operacionais - Gerenciador de Arquivos (Programas)
+		4 - Sistemas Operacionais - Gerenciador de Usuários (Local X Rede)
+
+linguagens de Programação
+	Baixo Nível (para microprocessadores - assembly)
+	
+	Alto Nível 
+		Compilada
+			c, c++, c#, pascal, VB
+
+		Interpretada
+			JavaScript, PHP, JSP, ASP
+		
+		(Java (JVM- interpretado por uma máquina virtual) não´entra nessas classificações)

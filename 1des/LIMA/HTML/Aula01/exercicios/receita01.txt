@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Bolo de Churros</title>
+
+	</head>
+
+	<body>
+		<h1>Bolo de Churros Invertido</h1>
+
+		<img src="https://bolosparavender.com.br/wp-content/uploads/2019/10/bolo-de-churros-invertido.jpg" alt="200" width="150"/>
+
+		 <h2>Ingredientes</h2>
+
+		<ul>
+			<li>3 ovos</li>
+			<li>1 xícara de chá de leite</li>
+			<li>1/2 xícara de chá de óleo</li>
+			<li>1 xícara de chá de açúcar</li>
+			<li>1 colher de sobremesa de canela em pó</li>
+			<li>2 xícaras de chá de farinha de trigo</li>
+			<li>1 colher de sopa de fermento em pó</li>
+			<li>1 lata de leite condensadooooooo</li>
+		</ul>
+
+		<h2>Modo de Preparo</h2>
+
+		<ol>
+			<li>Na batedeira, bata os ovos, o leite, o óleo, o açúcar e a canela em pó, por 3 minutos.</li>
+			<li>Acrescente a farinha de trigo, aos poucos, e bata por mais 1 minuto.</li>
+			<li>Adicione o fermento em pó e bata novamente por mais 1 minuto.</li>
+			<li>No fundo de uma panela de buraco central, bem untada com margarina, coloque o leite condensado.</li>
+			<li>Acrescente a massa, devagar e com cuidado. A massa não deve se misturar com o leite condensado.</li>
+			<li>Leve para assar em forno pré aquecido a 200°C por 45 minutos.</li>
+			<li>Desligue o forno e deixe o bolo lá dentro por 15 minutos.</li>
+			<li>Retire do forno, passe uma faca nas bordas da forma, dê leves batidinhas e desenforme em um prato para servir.</li>
+			<li>Espere esfriar e sirva :)</li>
+		</ol>
+
+		<p>Se tudo der certo, voçê terá um bolo maravilhoso em sua mesa.</P>
+	</body>
+</html>

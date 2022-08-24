@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Receitas</title>
+	</head>
+
+	<body>
+		<h1>Livro de Receitas</h1>
+
+		<ol>
+			<li><a href="file:///E:/karen%20costa%201des/HTML/Aula01/exercicios/receita01.html">Bolo de Churros Invertido</a></li>
+
+			<li><a href="">Receita o2</a></li>
+
+			<li><a href="">Receita o3</a></li>
+		</ol>
+
+	</body>
+</html>

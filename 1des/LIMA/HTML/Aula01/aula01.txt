@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<!-- em html é assim que se faz um comentário.
+	head = informações necessárias para os site carregar minha página-->
+	<head>
+		<!--deixar as letras decentes-->
+		<meta charset="utf-8"> 
+		
+		<!--título da página-->
+		<title>Aula 01</title>
+	</head>
+
+	<!--body = Conteúdo da página-->
+	<body>
+		<!--Títulos e subtítulos - h1 até h6-->
+		<h1>Olá, mundo!</h1>
+		<h2>Olá, mundo!</h2>
+		<h3>Olá, mundo!</h3>
+		<h4>Olá, mundo!</h4>
+		<h5>Olá, mundo!</h5>
+		<h6>Olá, mundo!</h6>
+		
+		<!--P = paragrafos-->
+		<p>Apenas um teste</p>
+		<p>Izzy linda perfeita</p>
+		
+		<!--lista ordenada-->
+		<ol>
+			<!--item da lista-->
+			<li>Abrir o bloco de notas</li>
+			<li>Definir a estrutrura padrão</li>
+			<li>Definir o charset</li>
+			<li>Adicionar o conteúdo ao body</li>
+			<li>Salvar o arquivo com extensão em html</li>
+		</ol>
+
+	
+		<!--Listas não ordenadas-->
+		<ul>
+			<li>Pão</li>
+			<li>Leite</li>
+			<li>Ovo</li>
+			<li>Batata</li>
+		</ul>
+
+
+		<!--Adicionar imagem na página-->
+		<img src="https://miro.medium.com/max/1200/1*o_Myf7_rCvwXosns-JBSMg.jpeg" alt="Um mamaco com mito jackson" width="300" />
+
+		<img src="./Monkey_feliz.jpg" alt="felicidade" width="150"/> 
+		<!--width serve pra mudar a largura da imagem   height serve pra mudar a altura--> 
+		
+		<!--Criar links-->
+		<a href="https://www.lolja.com.br/parceiros/luba-tv/">Acessar Site!</a>
+
+		<a href="https://www.youtube.com/lubatv">
+			<img src="luba.tv.logo.jpg" width="225">
+		</a>
+
+		<a href="./pagina02.html">Acessar Página 02</a>
+	</body>
+</html>	
