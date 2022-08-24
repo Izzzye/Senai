@@ -4,9 +4,6 @@
 - if(teste lógico){verdadeiro} else if(teste lógico) {verdadeiro} else {falso}
 - else = senão
 
-# Árvore binária
-<img src="arvore.png">
-
 # Teste lógico
 - (==) igual
 - (!=) diferente
