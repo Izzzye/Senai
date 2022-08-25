@@ -1,4 +1,4 @@
-/*Crie dois vetores numÈricos de dimens„o 5 com valores informados pelo usu·rio.
+/*Crie dois vetores num√©ricos de dimens√£o 5 com valores informados pelo usu√°rio.
 Apresente a soma do primeiro vetor com o inverso do segundo.
 */
 
@@ -13,38 +13,21 @@ int main (){
 	
 	printf("Digite os valores do primeiro vetor:\n");
 	for (i = 0; i < 5; i++){
-		printf("%d∫ valor: ", cont);
+		printf("%d¬∫ valor: ", cont);
 		scanf ("%d", &vetor1[i]);
 		cont++;
 	}
 	printf("\nDigite os valores do segundo vetor:\n");
 	for (i = 0; i < 5; i++){
-		printf("%d∫ valor: ", cont2);
+		printf("%d¬∫ valor: ", cont2);
 		scanf ("%d", &vetor2[i]);
 		cont2++;
 	}
-	printf("\nA soma dos n˙meros do primeiro vetor com o inverso do segundo È:");
+	printf("\nA soma dos n√∫meros do primeiro vetor com o inverso do segundo √©:");
 
-	soma = vetor1[0] + vetor2[4];
-	printf("\n%d + %d = %d", vetor1[0], vetor2[4], soma);
-	
-	soma = vetor1[1] + vetor2[3];
-	printf("\n%d + %d = %d", vetor1[1], vetor2[3], soma);
-	
-	soma = vetor1[2] + vetor2[2];
-	printf("\n%d + %d = %d", vetor1[2], vetor2[2], soma);
-	
-	soma = vetor1[3] + vetor2[1];
-	printf("\n%d + %d = %d", vetor1[3], vetor2[1], soma);
-	
-	soma = vetor1[4] + vetor2[0];
-	printf("\n%d + %d = %d", vetor1[4], vetor2[0], soma);
-	
-	
-	/*for (vetor1 = 0; vetor1 <= 4; vetor1++; vetor2 = 4; vetor2 > 0; vetor2--){
-		
-		soma = vetor1[i] + vetor2[i];
-		printf("\n%d + %d = %d", vetor1[i], vetor2[i], soma);
-	}*/
-	
+	for (i = 0; i < 5; i++){
+		soma = vetor1[i] + vetor2[j];
+		printf("\n%d + %d = %d", vetor1[i], vetor2[j], soma);
+		vetor2[j]--;
+	}	
 }
