@@ -24,6 +24,7 @@ int main (){
 		vetor[5-i] = aux;
 	}
 	
+	printf ("\nEsses são os valores do vetor de forma inversa:\n");
 	for (i = 0; i < 6; i++){
 		printf ("%d\n",vetor[i]);
 	}
