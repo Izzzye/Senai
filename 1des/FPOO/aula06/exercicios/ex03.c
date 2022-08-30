@@ -6,7 +6,7 @@
 int main (){
 	setlocale(LC_ALL,"");
 	
-	int vetor[6], aux[6];
+	int vetor[6], aux;
 	int i, cont = 1;
 	
 	
@@ -15,5 +15,16 @@ int main (){
 		printf("%dº valor: ", cont);
 		scanf ("%d", &vetor[i]);
 		cont++;
-	}	
+	}
+	
+	//Processamento - (TROCA-  Inverter o vetor)
+	for (i = 0; i < 6; i+=2){
+		aux = vetor[i];
+		vetor[i] = vetor[5-i];
+		vetor[5-i] = aux;
+	}
+	
+	for (i = 0; i < 6; i++){
+		printf ("%d\n",vetor[i]);
+	}
 }
