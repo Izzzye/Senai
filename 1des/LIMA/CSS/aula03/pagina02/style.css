@@ -13,6 +13,8 @@ main {
     background-color: rgb(198, 223, 60);
     width: 100vw;
     height: 70vh;
+
+    
 }
 
 footer{
@@ -25,12 +27,32 @@ footer{
     background-color: blue;
     width: 10vw;
     height: 70vh;
+    position: absolute;
 }
 
 
-div > retangulo2 {
+.retangulo2 {
     background-color: blue;
     width: 10vw;
     height: 70vh;
-    margin-left: 50px;
+    position: absolute;
+    right: 0px;
+}
+
+.quadrado {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 30%;
+    top: 45%;
+}
+
+.quadrado2 {
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 30%;
+    top: 45%;
 }
