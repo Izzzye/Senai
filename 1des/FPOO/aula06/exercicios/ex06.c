@@ -1,18 +1,18 @@
-//Faça um programa que gere 100 valores inteiros aleatorios e os classifique em ordem crescente.
+//FaÃ§a um programa que gere 100 valores inteiros aleatorios e os classifique em ordem crescente.
 
 #include <stdio.h>
 #include <locale.h>
 #include <time.h>
 int main (){
 	setlocale (LC_ALL,"");
-	srand(time(NULL));// Utiliza o relógio do pc para gerar pseudo aleatórios
+	srand(time(NULL));// Utiliza o relÃ³gio do pc para gerar pseudo aleatÃ³rios
 	int vetor[100]; // vetor a ser classificado
 	int i = 0, j; // contadores
 	int aux; // auxiliar para fazer trocas
-	int igual; //validar se um número aleatório é igual a algum outro
+	int igual; //validar se um nÃºmero aleatÃ³rio Ã© igual a algum outro
 	
 	
-//Gera 100 números aleatórios de 0 a 1000 e sem duplicatas
+//Gera 100 nÃºmeros aleatÃ³rios de 0 a 1000 e sem duplicatas
 	i = 0;
 	do{
 		aux = rand() % 1000;
@@ -27,7 +27,7 @@ int main (){
 	}while(i < 100);
 
 	
-// Processamento - Algoritimo de classificação e troca
+// Processamento - Algoritimo de classificaÃ§Ã£o e troca
 	for ( i = 0; i < 100; i++){
 		for (j = i + 1; j < 100; j++){
 			if (vetor[i] > vetor[j]){
@@ -41,8 +41,6 @@ int main (){
 
 // Saida com o vetor ordenado
 	for(i = 0; i < 100; i++){
-		printf("%dº valor: %d\n ", i + 1, vetor[i]);
-	}
-	
+		printf("%dÂº valor: %d\n ", i + 1, vetor[i]);
+	}	
 }
-
