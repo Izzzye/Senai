@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.conteiner {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+}
+
+#linha1 {
+    justify-content: space-around;
+}
+
+#linha2 {
+    justify-content: space-between;
+}
+
+#linha3 {
+    justify-content: space-evenly;
+}
+
+#linha4 {
+    justify-content: center;
+}
+
+.bola {
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient(rgb(103,193,242), rgb(250,155,239), rgb(152, 108, 194));
+    border-radius: 25px;
+}
