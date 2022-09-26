@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Silkscreen&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: grey;
+    border-bottom: 10px solid rgb(93, 86, 131);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Silkscreen', cursive;
+    font-family: 'Indie Flower', cursive;
+    
+}
+
+ header > div > img{
+    height: 8vh;
+}
+
+header > div {
+    display: flex;
+    align-items: center;
+    margin: 25px;
+}
+
+.esquerda-header > p{
+    font-size: 5vh;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 30px;
+}
+
+button {
+    border: 3px solid rgb(93, 86, 131);
+    border-radius: 10px;
+    background-color: black;
+    margin-left: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    padding:  5px 20px;  
+    cursor: pointer; 
+    font-family: 'Silkscreen', cursive;
+    font-family: 'Indie Flower', cursive;
+}
+
+.direita-header > button:hover {
+    border: rgb(66, 56, 122);
+    background-color: rgb(73, 73, 77);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+main {
+    width: 100vw;
+    height: 90vh;
+    background-color: rgb(94, 91, 91);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > div {
+    width: 70vw;
+    height: 25vh;
+    background-color: grey ;
+    border: 4px solid rgb(66, 56, 122);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+main > div > img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(66, 56, 122);
+    border-radius: 15px;
+    margin-left: 15px;
+    
+}
+
+#texto {
+    margin: 30px;
+}
+
+main > div > div > h1{
+    padding: 20px 20px;
+}
+
+main > div > div > p {
+    padding: 10px 0px;
+    font-size: 20px;
+}

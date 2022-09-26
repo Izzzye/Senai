@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(35, 39, 42, 1);
+    background-image: url(../assets/medusa.png);
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: center;
+    border: 8px solid rgba(89, 102, 243, 1);
+    overflow: hidden;
+    font-family:'Inria Serif', serif;
+}
+
+
+header {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.texto {
+    font-size: 96px;
+    color:rgba(114, 137, 218, 1);
+    text-shadow: -0.5rem 0.1em rgba(3, 3, 3, 0.618),
+    -2px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black;
+    left: 112px;
+    margin:110px;
+}
+
+button {
+    background-color: rgb(28, 31, 33);
+    border:4px solid black;
+    border-radius: 30px;
+    width: 200px;
+    height: 70px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    font-size: 38px;
+    background-color: rgb(34, 35, 36);
+    color: rgb(104, 116, 241);
+}
+
+div > button{
+    margin-right: 100px;
+}
+
+a:link , a:visited, a:active{
+    font-size: 30px;
+    color: rgba(114, 137, 218, 1);
+    text-decoration: none;
+    font-family: 'Inria Serif', serif;
+}
+
+a:hover{
+    font-size: 38px;
+    color: rgb(104, 116, 241);
+}
+
+main{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    bottom: 0px;
+}
+
+.container {
+    width: 582px;
+    height: 270px;
+    background: rgba(0, 0, 0, 0.625);
+    border-radius: 35px;
+    margin:70px;
+   
+}
+
+#cont1 {
+    display: flex;
+    align-items: center;
+}
+
+#text{
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #898888;
+    margin-left: 30px;
+}
+
+#linguagens {
+    width: 50vw;
+}
+
+#git {
+    width: 75px;
+    height: 75px;
+    margin-left: 30px;
+}
+
+#title{
+    font-size: 40px;
+    font-family: 'inria Serif';
+    color: rgba(114, 137, 218, 1);
+    display: flex;
+    margin: 40px;
+}
+
+li {
+    margin-left: 70px;
+    color: #898888;
+    font-family: 'Inria Serif';
+    font-style: normal;
+    font-size: 40px;
+    
+}
+
+#site:link, #site:visited, #site:active {
+    color: #898888;
+}
+
+#site:hover {
+    color: #b3afaf;
+}
+
+#barra {
+    width: 20vw;
+    height: auto;
+    margin-left:100px ;
+}
+
+#coming {
+   color: #898888;
+   margin-left: 160px;
+   font-size: 40px;
+}
