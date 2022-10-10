@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    width: 99vw;
+    height: 13.4vh;
+}
+
+.Menu-sup{
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+}
+
+.Menu-sup div{
+    display: inline-block;
+}
+
+.Texto-laranja{
+    color:#BFB434;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-size: 35px;
+    font-display: swap;
+    font-weight: bold;
+}
+
+.Texto-laranja span{
+    color: white;
+}
+
+.login {
+    width: 25px;
+    height: auto;
+}
+
+#busca {
+    font-family: 'Rubik';
+    font-style: normal;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px 0px 0px 5px;
+    border: white solid 1px;
+}
+
+#buscar {
+    display: flex;
+    align-items: center;
+}
+
+.lupa {
+    background-color: #BFB434;
+    padding: 5px;
+    border-radius: 0px 5px 5px 0px;
+    width: 37px;
+    height: auto;
+    cursor: pointer;
+}
+
+#minha-conta {
+    display: flex; 
+    align-items: center;
+}
+
+#minha-conta p{
+    color: white;
+    font-family: 'Rubik';
+    padding: 5px;
+    cursor: pointer;
+}
+
+.Menu-inf {
+    width: 99vw;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Rubik';
+    font-style: normal;
+}
+
+#lista li{
+    list-style: none;
+    display: inline;
+    padding: 40px;
+}
+
+#Us{
+    background-image: url(https://raw.githubusercontent.com/wellifabio/senai2022/master/1des/lima/aula11/assets/img-jogo.jpg);
+    background-position: center;
+    margin: 0px;
+}
+
+#Us > div{
+    background-color: rgba(0, 0, 0, 0.397);
+    margin-top: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 90px 520px;
+}
+#capa-jogo {
+  width: 325px;
+}
+
+#Last {
+    font-family: 'Rubik';
+    color: white;
+}
+#nome-jogo {
+    font-size: 30px;
+}
+
+#preco {
+    font-size: 15px;
+}
+
+#comprar > button{
+    background-color: #3E3E3E;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    padding: 10px 30px;
+    font-family: 'Rubik';
+    cursor: pointer;
+}
+
+#comprar > button:hover{
+    background-color: #373737;
+}
+#comprar {
+    padding-top: 60px;
+}
+
+#catalogo{
+    width: 99vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.jogos{
+    margin: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.jogos > img{
+    width: 200px;
+    height: 250px;
+}
+
+.jogos > p{
+    font-family: 'Rubik';
+    font-style: inherit;
+    padding: 10px;
+}
+
+.jogos > button{
+    background-color: #BFB434;
+    border: #BFB434 solid 1px;
+    padding: 8px 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.jogos > button:hover{
+    background-color: #a79e33;
+}

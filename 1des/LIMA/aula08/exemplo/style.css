@@ -1,0 +1,38 @@
+/* display - serve pra posicionar os itens
+    align-items - serve para alinhar os itens
+    justify-content - cria um espaçamento entre os itens
+    flex-wrap - quebra de linha
+    overflow - pra sobrecarga de ekementos
+        scroll - cria uma barra de rolagem
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    background-color: black;
+}
+
+.conteiner {
+    background-color: blue;
+    width: 50vw;
+    height: 50vh;
+    border: 2px solid red;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-wrap: wrap-reverse;
+    overflow: scroll;
+}
+
+.conteiner > div {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    background: linear-gradient(pink,purple);
+}
+
