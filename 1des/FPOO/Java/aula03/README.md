@@ -1,31 +1,41 @@
-# Java (Exemplo 2 - Projeto Vendas)
-- Criar uma pasta chamada "workspace_aula2"
-- Abrir o Eclipse e configurar esta pasta como workspace
-- Criar um novo projeto "Java Project" chamado <b>Vendas</b>
-- Na pasta "src" do seu projeto criar uma nova classe chamada <b>Venda</b> no pacote <b>padrao</b> não marcar a opção "public static void main()"
-<table>
-	<tr><td border=1>Venda</td><td border=0>Classe</td></tr>
-	<tr><td border=1>produto:String<br>preco:String<br>quantidade:int</td><td border=0>Atributos</td></tr>
-	<tr><td border=1>subtotal():void</td><td border=0>Métodos</td></tr>
-</table>
-- Ainda no pacote <b>padrao</b> criar uma classe chamada <b>Main</b> e marcar a opção "public static void main()"
-- Ao concluir a demonstração renomear o pacote <b>padrao</b> para <b>vendas01</b>
+# POO (Programação Orientada a Objeto)
+- Classe > Instância > Objeto
+- UML (Unified Modeling Language - Linguagem universal de modelagem)
+- DC (Diagrama de Classes)
 
-# Programação Orientada a Objeto
-- O início da POO é a <b>Classe</b>:
+# Atividade
+- De acordo com a UML a seguir crie a Classe modelo:
 - <img src="classe.png">
-- Formada pelos ítens:
-- Nome da classe iniciando em maiúsculas:
-- Atributos que são as características da classe, suas variáveis
-- Métodos que são as funções da classe
-- <img src="instancia.png">
-- A instância é a reserva/ponteiro de memória para um objeto, porém sem dados ainda
-- <img src="objeto.png">
-- O objeto, em fim é o que podemos utilizar na programação
-- existe a partir do comando <b>new</b>
+- Crie a classe Main, um vetor com 5 boletins[], preencha 5 Objetos boletins e os mostre em uma tabela.
 
-# Java: Vetores
-- Como declarar vetores primitivos:
-- <img src="vetores.png">
-- Como declarar e utilizar vetores de Classes:
-- <img src="vetoresclasse.png">
+# Métodos: Construtores() e toScring()
+- Classe simples
+- <img src="classe_simples.png">
+- Método toString() : é um método comum de <b>Saída</b> onde formatamos os atributos da classe
+- <img src="tostring.png"> 
+- Mátodos construtores, servem para iniciar um objeto já com dados, simplificando a <b>Entrada</b>
+- <img src="construtores.png">
+
+# Continuação da atividade
+- A média entre as disciplinas não faz sentido, por este motivo vamos alterar o método <b>media()</b> para <b>conceito()</b>
+- <img src="classe_corrigida.png">
+- Para ser "Aprovado" o aluno deve ter nota maior ou igual a 5 nas três disciplinas(Português, Matemática e Cinências)
+- Senão estará "Reprovado"
+- Programa Completo com Construtores:
+- <img src="projeto.png">
+
+# Java Classe Scanner
+- <img src="scanner.png">
+
+# Atividade 2
+- Crie um novo projeto chamado <b>Nutricao</b>
+- Crie um pacote chamado <b>programa</b>
+- Crie uma classe modelo chamada <b>Paciente</b> conforme o DC, UML a seguir:
+- <img src="classePaciente.png">
+- Crie um programa seguindo as regras de negócio a seguir:
+	- 1. Deve permitir cadastrar até 10 pacientes:
+	- 2. Deve mostrar todos os pacientes cadastrados em uma lista na tela do console, com o imc e diagnóstico:
+	- 3. Deve calcular o imc() com a fórmula peso / (altura * altura)
+	- 4. Deve traçar o diagnóstico conforme tabela a seguir
+	- <img src="imc.png">
+- O programa deve utilizar Construtores, toString() e no método mai() deve utilizar a classe Scanner para ler os dados a partir do usuário:
