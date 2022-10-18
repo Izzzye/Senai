@@ -23,3 +23,4 @@
 	- Contar cada um dos possíveis diagnósticos: quantos obesos, normais, sub pesos, etc.
 - Salvar e imprimir a planilha como um relatório para um(a) Nutricionista e/ou Endocrinologista
 	
+<img src="Nutrição.pdf">
