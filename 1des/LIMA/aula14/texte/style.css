@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 99vw;
+    height: 150vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1.3fr 8fr 8fr 5fr;
+    grid-template-areas: "header header" "a1 main" "a2 main" "footer footer";
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#LOgo{
+    display: flex;
+    align-items: center;
+}
+
+#logo{
+    width: 100px;
+    height: auto;
+    margin-left: 100px;
+}
+ 
+
+#nome {
+    color: rgb(109, 83, 180);
+   
+}
+
+#buttons {
+    margin-right: 50px;
+}
+
+#buttons > button {
+    background-color: rgb(92, 69, 157);
+    color: rgb(201, 204, 207);
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid rgb(49, 36, 86);
+    cursor: pointer;
+}
+
+button:hover{
+    font-size: 16px;
+}
+
+main{
+    grid-area: main;
+    background-color: indianred;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    gap: 15px;
+    padding: 30px;
+    
+     
+}
+
+main > div{
+    background-color: antiquewhite;
+}
+
+#a1{
+    grid-area: a1;
+    background-color: cadetblue;
+}
+
+#a2{
+    grid-area: a2;
+    background-color: aquamarine;
+}
+
+footer{
+    grid-area: footer;
+    background-color: darkkhaki;
+}

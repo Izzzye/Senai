@@ -1,0 +1,48 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 50vw;
+    height: 50vh;
+    background-color: beige;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr) );
+    grid-auto-rows: 100px;
+    gap: 10px; 
+}
+.container > div{
+    background-color:blueviolet;
+    
+}
+
+.area {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas: "header header" 
+                            "main a1" 
+                            "main a2";
+}
+
+.header {
+    grid-area: header;
+    background-color: aqua;
+}
+
+.main {
+    grid-area: main;
+    background-color: black;
+}
+
+#a1{
+    grid-area: a1;
+    background-color: blue;
+}
+
+#a2{
+    grid-area: a2;
+    background-color: antiquewhite;
+}
