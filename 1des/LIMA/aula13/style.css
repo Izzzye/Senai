@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Roboto:wght@300&family=Silkscreen&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url(/assets/marcie.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+svg {
+    fill:aliceblue;
+    width: 25px;
+    height: auto;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#link {
+    color: aliceblue;
+    margin:0 10px;
+    margin-bottom: 6px;
+    font-size: 13px;
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: aliceblue;
+}
+
+#s1 {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#s1 > img{
+    margin-top: 70px;
+    width: 270px;
+    height: auto;
+}
+
+#s2{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barra-pesquisa {
+    width: 560px;
+    height: 45px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 7px 1px rgba(0,0,0,.2);
+}
+
+#lupa{
+    width: 17px;
+    height: auto;
+    margin-left: 20px;
+}
+
+#pesquise {
+    width: 30vw;
+    border: 1px solid white;
+    font-size: 17px;
+    margin-left: 20px;
+    border-style: none;
+}
+
+#microfone {
+    cursor: pointer;
+    width: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+#s3 {
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#icon {
+    background-color: white;
+    padding: 13px;
+    border-radius: 25px;
+    width: 50px;
+    height: auto;
+}
+
+.atalho{
+    width: 110px;
+    height: 120px;
+    border-radius: 10px;
+   
+    
+    cursor: pointer;
+}
+
+.atalho:hover {
+    background-color: rgba(255, 255, 255, 0.104);
+}
+
+.atalho > p {
+    font-size: 13px;
+    color: white;
+    font-style: bolder;
+}
+
+
+
+
+
+footer{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+}
+
+#lapis {
+    cursor: pointer;
+    width: 20px;
+    margin-right: 20px;
+}
