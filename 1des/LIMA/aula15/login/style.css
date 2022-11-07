@@ -1,0 +1,70 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(108, 17, 123, 1);
+    
+}
+
+#titulo01{
+    padding-bottom: 30px;
+    font-size: 52px;
+    line-height: 72px;
+    color: #FFFFFF;
+}
+
+#titulo02{
+    width: 463px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px 50px;
+    gap: 50px;
+    width: 500px;
+    height: 400px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    flex: none;
+}
+
+button{
+    width: 400px;
+    height: 60px;
+    background: #04558A;
+    border: none;
+    border-radius: 5px;
+    flex: none;
+    cursor: pointer;
+}
+
+a{
+    font-size: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#email , #senha{
+    padding: 15px;
+    width: 400px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #04558A;
+}

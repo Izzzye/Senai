@@ -1,0 +1,14 @@
+.caixa {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ .caixa {
+    display: block;
+}
