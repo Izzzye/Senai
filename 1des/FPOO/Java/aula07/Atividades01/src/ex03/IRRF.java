@@ -1,4 +1,4 @@
-package exercicio3;
+package ex3;
 
 public class IRRF {
 
