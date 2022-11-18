@@ -1,4 +1,4 @@
-package exercicio3;
+package ex3;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
