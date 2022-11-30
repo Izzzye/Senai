@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: rgb(46, 45, 46);
+}
+
+header{
+    width: 95vw;
+    height: 18vh;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+}
+
+#container{
+    background-color: rgb(121, 121, 122);
+    width: 345px;
+    height: 97px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#text{
+    font-weight: 400;
+    color: rgb(207, 203, 211);
+    font-size: 20px;
+}
+
+#money{
+    float: right;
+    font-weight: 700;
+    font-size: 28px;
+    color: rgb(207, 203, 211);
+    margin-top: 10px;
+}
+
+#menu{
+    position: absolute;
+    width: 70px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(121, 121, 122);
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+#menu:hover{
+    position: absolute;
+    width: 300px;
+    height: 100vh;
+    transition: 0.5s;
+}
+
+#menu > div{
+    width: 300px ;
+    display: flex;
+    align-items: center;
+}
+
+#menu > div:hover{
+    background-color: rgb(176, 176, 177);
+}
+
+#menu > div > img{
+    width: 40px;
+    height: 100vh;
+    height: 40px;
+    margin: 15px;
+}
+
+main{
+    width: 96vw;
+    float: right;
+    height: 65vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#as{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#loc{
+    width: 250px;
+    padding: 15px;
+    outline-style: none;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+#as > img{
+    border-radius: 15px;
+    width: 900px;
+    height: auto;
+}
+
+#meses{
+    width: 40vw;
+    float: right;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 150px) );
+    grid-auto-rows: 120px;
+    gap: 20px; 
+    padding: 55px;
+    padding-top: 150px;
+}
+
+#meses > div{
+    background-color: rgb(121, 121, 122);
+    border-radius: 10px;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    cursor: pointer;
+    color: rgb(207, 203, 211);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#meses > div:hover{
+    background-color: rgb(136, 136, 138);
+}
+
+
+@media (max-width: 390px){
+
+    header{
+        width: 100vw;
+        height: 70vh;
+        flex-direction: column;
+    }
+
+    #container{
+        width: 90vw;
+    }
+
+    main{
+        flex-direction: column;
+    }
+    
+    #menu{
+      bottom: 0px;
+      width: 300px;
+      height: 100px;
+      bottom: 0;
+      display: flex;
+      flex-direction: inherit;
+    }
+
+    #hovers{
+        display: none;
+    }
+}
