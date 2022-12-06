@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class Formulario extends JFrame implements ActionListener{
+public class FormularioEstrutural extends JFrame implements ActionListener{
 	private static final long serialVersionUID = 1L;
 	
 	JPanel painel;
