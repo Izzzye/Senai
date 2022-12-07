@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Nerko One', cursive;
+}
+
+body{
+    background-color: rgb(49, 47, 47);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+p{
+    color: grey;
+    font-size: 35px;
+    position: absolute;
+    left: 800px;
+    top: 450px;
+}
+
+img{
+    width: 150px;
+    height: auto;
+    rotate: 90deg;
+    position: relative;
+    animation-name: car;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes car{
+    0%   {left:10px; top:0px;}
+    25%  {left:90%; top:0px; rotate: 180deg;}
+    50%  {left:90%; top: 500px; rotate: 240deg;}
+    75%  {left:0px; top:500px; rotate: 360deg;}
+    100% {left:10px; top:0px;}
+}
