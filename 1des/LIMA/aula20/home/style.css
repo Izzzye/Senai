@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    position: sticky;
+    background-color: white;
+    top: 0;
+    width: 390px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    overflow: scroll;
+    overflow-y: hidden;
+}
+
+header > div{
+    display: flex;
+    gap: 15px;
+}
+
+#story{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    background-color: rgb(189, 184, 184);
+    margin: 6px;
+}
+
+#postsDeCria{
+    width: 390px;
+    height: auto;
+}
+
+#post{
+    width: 390px;
+    height: 460px;
+    margin: 20px 0px 10px 0px;
+}
+
+#id{
+    width: 390px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#id > div{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(189, 184, 184);
+    margin: 0px 10px 0px 10px;
+}
+
+#foto{
+    width: 390px;
+    height: 390px;
+    background-color: rgb(189, 184, 184);
+}
+
+#like{
+    width: 390px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#like > div > img{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+footer{
+    position: sticky;
+    background-color: white;
+    bottom: 0;
+    width: 390px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+ footer > img{
+    width: 40px;
+ }
