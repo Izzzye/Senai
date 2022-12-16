@@ -1,0 +1,6 @@
+
+A média de preços: 13511.175
+O veículo mais barato: Fiesta	1996	2535.90
+O veículo mais caro: Voyage	2015	35240.00
+O veiculo mais novo: Voyage	2015	35240.00
+O veículo mais velho: Fiesta	1996	2535.90
