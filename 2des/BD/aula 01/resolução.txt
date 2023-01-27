@@ -1,0 +1,41 @@
+Produto
+ - id_produto *
+ - nome_produto
+ - quantidade
+ - preco
+
+libera
+
+Retirada
+ - id_retirada *
+ - id_produto
+ - hora_retirada
+ - hora_devolucao
+
+cria
+
+Funcionario
+ - id_funcionario *
+ - nome_funcionario
+
+
+
+-----
+
+Superior
+ - id_superior
+ - nome_superior
+
+gera
+
+Ordem
+ - id_ordem *
+ - id_funcionario
+ - id_superior
+ - ordem
+
+atribui à
+
+Funcionario
+ - id_funcionario *
+ - nome_funcionario
