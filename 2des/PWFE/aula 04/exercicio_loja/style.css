@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2a2b28;
+}
+
+header{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2a2b28;
+}
+
+header > div{
+    width: 600px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+}
+
+#le > p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: #e1e7e7de;
+}
+
+#ld > button{
+    color: #e1e7e7de;
+    background-color: #4c4d4a;
+    font-size: 1.5rem;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border-style: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#ld > button:hover{
+    background-color: #292b19c3;
+}
+
+section{
+    width: 100vw;
+    height: 50px;
+    background-color: #464744;
+    display: flex;
+    align-items: center;
+}
+
+section > p{
+    color: #e1e7e7de;
+    font-size: 2rem;
+    margin-left: 100px;
+}
+
+.produto{
+    width: 400px;
+    height: 500px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(14, 14, 14);
+}
+
+.produto >img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.produto > p{
+    color: #e1e7e7de;
+}
+
+#nome{
+    font-size: 1.8rem;
+}
+
+#valor{
+    font-size: 2rem;
+}
+
+.produto > button{
+    width: 170px;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
