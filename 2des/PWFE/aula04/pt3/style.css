@@ -1,0 +1,19 @@
+body{
+    background-color: #353535;
+}
+.banner{
+    background-image: url('');
+    background-size: cover;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+p{
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+}
