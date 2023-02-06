@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(107, 105, 105);
+}
+
+table{
+    width: 800px;
+    height: 200px;
+}
+
+td{
+    text-align: center;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
