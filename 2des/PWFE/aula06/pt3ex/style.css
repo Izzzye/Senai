@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5555;
+}
+
+.inputs{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.model{
+    display: none;
+}
+
+.cozinha{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.entrega{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card{
+    width: 300px;
+    height: 120px;
+    background-color: #525252;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.card>p{
+    color: rgb(223, 223, 223);
+}
+
+.card>button{
+    width: 280px;
+    height: 20px;
+    border-radius: 10px;
+    border-style: none;
+}
+
+.pedidos{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}

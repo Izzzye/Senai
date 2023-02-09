@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+section{
+    width: 200px;
+    height: 250px;
+    background-color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#nome{
+    color: #dcd8d8;
+    font-size: 30px;
+}
+
+button{
+    
+}

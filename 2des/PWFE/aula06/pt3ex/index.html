@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js" defer></script>
+    <title>LANCHE DU BON</title>
+</head>
+<body>
+    <div class="inputs">
+        <input type="text" id="nome" placeholder="Digite o Nome">
+        <input type="text" id="endereco" placeholder="Endereço">
+        <select name="" id="comidas">
+            <option value=""></option>
+            <option value="X-SATÃ">X-SATÃ</option>
+            <option value="X-COLESTEROL">X-COLESTEROL</option>
+            <option value="X-SALADA">X-SALADA</option>
+            <option value="X-DIABETES">X-DIABETES</option>
+            <option value="X-DEPRESSÃO">X-DEPRESSÃO</option>
+        </select>
+        <input type="number" id="qtd">
+        <button onclick="enviar()">Enviar Pedido</button>
+    </div>
+    <hr>
+
+    <div class="pedidos">
+        <div class="cozinha">
+            <h1>COZINHA</h1>
+            <div class="card model">
+                <p id="cliente"></p>
+                <p id="local"></p>
+                <p id="pedido"></p>
+                <p id="quantidade"></p>
+                <button>Ir para Entrega</button>
+            </div>
+        </div>
+        <div class="entrega">
+            <H1>ENTREGA</H1>
+        </div>
+    </div>
+</body>
+</html>
