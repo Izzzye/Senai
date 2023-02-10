@@ -9,7 +9,7 @@
 - <img src="lousa03.jpg">
 # Exemplo:
 - <img src="dados_compras.png">
-- <img src="der_compras.png">
+- <img src="compras.png">
 # Exercício Aula.
 - 1. Criar o script SQL (DDL)
 - 2. Criar o script SQL (DML)
