@@ -1,0 +1,27 @@
+NORMALIZAÇÃO
+
+	1ª FORMA NORMAL
+		A) identificar campos compostos;
+			RESOLUÇÃO - dividi-los em colunas;
+		
+		B) identificar atributos multivalorados;
+			RESOLUÇÃO - colocá-los em outra tabela relacionada; 
+
+
+	2ª FORMA NORMAL
+		A) estar na primeira forma normal;
+		
+		B) identificar campos chave;
+
+		C) identificar campos dependentes de outras chaves;
+			RESOLUÇÃO - colocar estes campos em outra tabela;
+
+
+	3ª FORMA NORMAL
+		A) estar na 2ª forma normal;
+
+		B) identificar campos derivados;
+			RESOLUÇÃO - eliminar estes campos;
+
+		OBS: estes serão calculados em consultas/visões ou apps;
+		
