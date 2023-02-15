@@ -22,5 +22,7 @@ router.delete('/professores/:id', Professores.deletar);
 router.post('/turmas', Turmas.criar)
 router.get('/turmas', Turmas.listar)
 router.get('/turmas/:id', Turmas.buscar)
+router.put('/turmas/:id', Turmas.atualizar)
+router.delete('/turmas/:id', Turmas.deletar)
 
 module.exports = router

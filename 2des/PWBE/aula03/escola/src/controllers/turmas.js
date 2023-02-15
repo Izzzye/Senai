@@ -32,9 +32,36 @@ const buscar = (req, res) => {
     res.status(404).end();
 }
 
+const atualizar = (req, res) => {
+    let {nome, sigla} = req.body
+    let {id} = req.params
+
+    turmas.forEach((turma, index) => {
+        if(turma.id == id){
+            turmas[index] = {ra, nome, sigla}
+            res.status(200).json(turmas[index]).end()
+        }
+    })
+
+    res.staus(404).end()
+}
+
+const deletar = (req, res) => {
+    let {id} = req.params; 
+
+    turmas.forEach((turma, index) => {
+        if(turma.id == id) {
+            turmas.splice(index, 1);
+        }
+    });
+
+    res.status(200).json(turmas).end();
+}
 
 module.exports={
     criar,
     listar,
-    buscar
+    buscar,
+    atualizar,
+    deletar
 }
