@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(253, 224, 242);
+    display: flex;
+}
+
+#esquerda{
+    width: 37vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#direita{
+    width: 63vw;
+    height: 100vh;
+    background-image: url("./assets/bem-vindo.jpg");
+    background-position: center;
+}
+
+#ret{
+    width: 300px;
+    height: 350px;
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
