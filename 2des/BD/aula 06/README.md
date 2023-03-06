@@ -7,7 +7,7 @@
 	- xml (Semi-estruturado)
 	- json (Não estruturado)
 - Interação de API com o Banco de Dados
-![](SQL_x_JSON.png)
+![](./imgs/SQL_x_JSON.png)
 - clientes.CSV
 ```csv
 nome;sobrenome;tipo;numero
@@ -87,12 +87,12 @@ Juliana;Silva;Celular;19-99987-4566
 ```
 ## Importação de dados de planilhas do Excel para BD SQL
 ### Por concatenação de dados:
-![](concatena1.png)
+![](./imgs/concatena1.png)
 - Utilizamos o símbolo & "E comercial" para concatenar
 - Lembrando de colocar aspas e apóstrofo nos campos tipo VARCHAR, DATE e os campos numéricos não necessitam de apóstrofo (aspas simples)
 - Formatar as datas e números nos formatos de Banco de Dados
 
-![](concatena2.png)
+![](./imgs/concatena2.png)
 clientes.sql
 ```SQL
 -- DML Importação por concatenação de dados
@@ -106,9 +106,9 @@ INSERT INTO clientes(nome, nascimento, sexo, peso) VALUES
 ```
 - Importando os dados de telefones:
 
-![](concatena3.png)
+![](./imgs/concatena3.png)
 
-![](concatena4.png)
+![](./imgs/concatena4.png)
 
 clientes.sql
 ```SQL
@@ -131,7 +131,7 @@ INSERT INTO telefones VALUES
 - A planilha deve estar Normalizada (Nas três formas 1º, 2º e 3º)
 - Colocar as datas e decimais no padrão do banco de dados
 - E cada tabela deve ser exportada para o formato CSV
-![](csv1.png)
+![](./imgs/csv1.png)
 - Ficando no seguinte padrão, conforme exemplos no Banco de Dados de uma Academia a seguir:
 
 aluno.csv
