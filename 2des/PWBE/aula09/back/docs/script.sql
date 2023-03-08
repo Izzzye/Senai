@@ -34,7 +34,7 @@ INSERT INTO corretores VALUES
 
 INSERT INTO status VALUES 
 (DEFAULT, "Diponível"),
-(DEFAULT, "Aluguado"),
+(DEFAULT, "Alugado"),
 (DEFAULT, "Vendido");
 
 INSERT INTO imoveis VALUES (DEFAULT, 1, "ksa7894", "Rua das dores, 8", 400000, 850, 1 );

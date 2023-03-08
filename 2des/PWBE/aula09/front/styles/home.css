@@ -15,8 +15,11 @@ header p:nth-child(2){
 
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 2rem;
+    gap: 2rem;
+    padding-left: 50px;
 }
 
 .card{
@@ -66,4 +69,9 @@ main{
 
 .opcoes button:nth-child(1):hover{
     background: #3aac3a;
+}
+
+.model{
+    display: none;
+    visibility: hidden;
 }
