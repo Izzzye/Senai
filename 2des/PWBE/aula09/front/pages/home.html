@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imobiliária</title>
+    <link rel="stylesheet" href="../styles/home.css">
+</head>
+<body onload="carregar()">
+    <header>
+        <p id="nome"></p>
+        <p onclick="logoff()">Sair</p>
+    </header>
+
+    <main>
+        <div class="card model">
+            <div id="info">
+                <p id="codigo">ksa12345</p>
+                <p id="endereco">Rua Teste</p>
+            </div>
+
+            <div id="valores">
+                <p id="venda">R$ 300000</p> 
+                <p id="aluguel">R$ 3000</p> 
+            </div>
+
+            <p id="status">Disponível</p>
+
+            <div class="opcoes">
+                <button id = "btVenda">Vender</button>
+                <button id="btAluga" >Alugar</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../scripts/home.js"></script>
+</html>
