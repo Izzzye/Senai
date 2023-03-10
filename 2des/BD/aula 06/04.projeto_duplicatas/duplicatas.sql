@@ -28,3 +28,24 @@ CREATE TABLE duplicatas (
     diferenca FLOAT(6,2),
     FOREIGN KEY (id_cliente) REFERENCES clientes(id)
 );
+
+LOAD DATA INFILE 'C:/Users/isabe/OneDrive/Documentos/Senai/2des/BD/aula 06/04.projeto_duplicatas/clientes.csv'
+INTO TABLE clientes
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'C:/Users/isabe/OneDrive/Documentos/Senai/2des/BD/aula 06/04.projeto_duplicatas/telefones.csv'
+INTO TABLE telefones
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
+
+LOAD DATA INFILE 'C:/Users/isabe/OneDrive/Documentos/Senai/2des/BD/aula 06/04.projeto_duplicatas/duplicatas.csv'
+INTO TABLE duplicatas
+FIELDS TERMINATED BY ';'
+ENCLOSED BY '"'
+LINES TERMINATED BY '\r\n'
+IGNORE 1 ROWS;
