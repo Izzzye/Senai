@@ -1,0 +1,8 @@
+DROP DATABASE IF EXISTS tarefa;
+CREATE DATABASE tarefa;
+USE tarefa;
+
+CREATE TABLE tarefas (
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    tarefa VARCHAR(100)
+);

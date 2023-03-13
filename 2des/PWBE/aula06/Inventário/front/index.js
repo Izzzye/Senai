@@ -16,7 +16,7 @@ cadastro.addEventListener('submit', e => {
         "id": cadastro.id.value,
         "nome": cadastro.nome.value,
         "descricao": cadastro.descricao.value,
-        "valor": cadastro.valor.value,
+        "valor": cadastro.valor.value
     }
 
     const options = {
