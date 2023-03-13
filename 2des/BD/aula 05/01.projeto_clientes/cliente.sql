@@ -1,0 +1,17 @@
+DROP DATABASE IF EXISTS cliente;
+CREATE DATABASE cliente CHARSET=UTF8 COLLATE utf8_general_ci;
+USE cliente;
+
+CREATE TABLE cliente (
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    nascimento DATE NOT NULL,
+    sexo VARCHAR(2) NOT NULL,
+    peso FLOAT(5,2) NOT NULL
+);
+
+CREATE TABLE telefone(
+    id INTEGER PRIMARY KEY AUTO_INCREMENT,
+    idCliente INTEGER NOT NULL,
+    FOREIGN KEY (idCliente) REFERENCES cliente(id)
+);
