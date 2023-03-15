@@ -5,7 +5,9 @@ const teste = (req, res) => {
 }
 
 const criar = (req, res) => {
-    con.query(`INSERT INTO tarefas VALUES(DEFAULT, ${con.body} ) `, (err, result) => {
+    const {tarefa} = req.body
+
+    con.query(`INSERT INTO tarefas VALUES(DEFAULT, '${tarefa}' ) `, (err, result) => {
         if (err == null)
             res.status(201).end()
         else
