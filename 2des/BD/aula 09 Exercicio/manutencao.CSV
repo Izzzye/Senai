@@ -1,0 +1,27 @@
+id_manutencao;id_func;placa;data_inicio;data_fim;descricao
+1;48482;DEA-7981;2022-02-25;2022-03-04;Lanterna queimada
+2;48542;CBC-4945;2022-03-13;2022-03-21;Farol queimado
+3;48522;BEE-7735;2022-03-29;2022-04-05;Troca de pneus dianteiros
+4;48502;CBA-4403;2022-04-14;2022-04-24;Troca de pneus dianteiros
+5;48502;BBC-8504;2022-04-30;2022-05-07;Farol queimado
+6;48482;BEB-5885;2022-05-16;2022-05-25;Troca de pneus trazeiros
+7;48482;EDB-2475;2022-06-05;2022-06-10;Retrovizor quebrado
+8;48502;CBC-4945;2022-06-25;2022-07-02;Troca de �leo e revis�o geral
+9;48482;EDB-2475;2022-07-15;2022-07-19;Troca de Fl�ido de Freio
+10;48502;DEA-7981;2022-08-04;2022-08-10;Problemas no cabo do acelerador
+11;48562;CBA-4403;2022-08-24;2022-08-31;Pane el�trica
+12;48522;BBC-8504;2022-08-27;2022-09-04;Rebimboca da parafuzeta
+13;48542;BEE-7735;2022-08-30;2022-09-04;Troca de cavalos por poneis
+14;48482;BEB-5885;2022-09-02;2022-09-07;Lanterna queimada
+15;48562;CBA-4403;2022-09-05;2022-09-15;Farol queimado
+16;48522;BEE-7735;2022-09-08;2022-09-15;Troca de pneus dianteiros
+17;48502;BBC-8504;2022-09-11;2022-09-15;Troca de pneus dianteiros
+18;48502;CBC-4945;2022-09-14;2022-09-23;Farol direito queimado
+19;48562;DEA-7981;2022-09-17;2022-09-21;Troca de pneus trazeiros
+20;48562;CBC-4945;2022-09-26;2022-10-06;Retrovizor direito quebrado
+21;48562;EDB-2475;2022-10-05;2022-10-10;Troca de �leo do motor
+22;48542;CBA-4403;2022-10-14;2022-10-24;Troca de placa
+23;48542;BEB-5885;2022-10-23;2022-10-26;Intala��o de rastreador
+24;48542;BBC-8504;2022-11-01;2022-11-10;Troca de �leo e revis�o geral
+25;48482;DEA-7981;2022-11-10;2022-11-13;Troca de pneus dianteiros
+26;48542;CBC-4945;2022-11-19;2022-11-25;Farol queimado esquerdo
