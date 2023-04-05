@@ -14,6 +14,14 @@
    </header>
 
    <main>
+        <div>
+            <form action="/create" method="POST">
+                <label for="descricao">Descrição</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="10" placeholder="Digite a descrição da sua tarefa"></textarea>
+                <label for="quando">Quando</label>
+                <input type="datetime-local" name="quando" id="quando" value="new Date().toISOString().slice(0,16)">
+            </form>
+        </div>
         <table>
             <thead>
                 <tr>
