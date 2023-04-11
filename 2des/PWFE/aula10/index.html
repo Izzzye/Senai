@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/ico.png" type="image/x-icon">
+    <title>Climão</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+</head>
+<body>
+    <header>
+        <img id="ico" src="/assets/ico.png" alt="">
+        <p id="titulo">Celta Preto</p>
+    </header>
+
+    <section>
+        <input id="busca" type="text">
+        <button id="envia" onclick="clima()">Buscar</button>
+    </section>
+
+    <main>
+        <img id="icon" src="" alt="">
+        <table>
+            <tbody>
+                <tr>
+                    <td id="data"></td>
+                </tr>
+                <tr>
+                    <td id="nome"></td>
+                </tr>
+
+                <tr>
+                    <td id="temperatura"></td>
+                </tr>
+
+                <tr>
+                    <td id="clima"></td>
+                </tr>
+
+                <tr>
+                    <td id="umidade"></td>
+                </tr>
+
+                <tr>
+                    <td id="velocidade"></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    
+</body>
+<script src="script.js"></script>
+</html>

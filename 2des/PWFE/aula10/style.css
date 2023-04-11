@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(97, 129, 216);
+}
+
+header{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+#ico{
+    width: 150px;
+    height: 150px;
+}
+
+#titulo{
+    font-size: 90px;
+    font-weight: 600;
+    font-family: 'DynaPuff', cursive;
+}
+
+section{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#busca{
+    width: 290px;
+    height: 40px;
+    border: none;
+    background-color: aliceblue;
+    outline: none;
+    border-radius: 50px;
+    font-family:'Jost', sans-serif;
+    font-size: 28px;
+    padding-left: 15px;
+}
+
+#envia{
+    width: 80px;
+    height:30px ;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(231, 231, 237);
+    font-family:'Jost', sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#envia:hover{
+    background-color: rgb(206, 210, 215);
+}
