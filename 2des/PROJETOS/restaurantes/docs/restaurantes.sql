@@ -12,7 +12,7 @@ CREATE TABLE cliente(
 
 CREATE TABLE categoria(
     id INT PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(20)
+    nome VARCHAR(50)
 );
 
 CREATE TABLE restaurante(
@@ -32,6 +32,7 @@ CREATE TABLE cardapio(
 );
 
 CREATE TABLE avaliacao(
+    id  INT PRIMARY KEY AUTO_INCREMENT,
     restauranteId INT NOT NULL,
     clienteId INT NOT NULL,
     data DATE NOT NULL,
@@ -77,7 +78,7 @@ INSERT INTO cardapio VALUES
     (NULL, 1, "ACAI 500ml", 15.5),
     (NULL, 2, "Carne de soja", 25.9),
     (NULL, 3, "cervejinha", 5.9 ),
-    (NULL, 3, "cervejinha", 5.9 );
+    (NULL, 4, "cervejinha", 6.9 );
 
 INSERT INTO avaliacao VALUES 
-   (2, 1, '2023-04-11', 5.0, "DOREI O NOME DO RESTAURANTE VEGANO SER CONTRAFILÉKKKKKKKKK");
+    (NULL, 2, 1, curdate(), 5.0, "DOREI O NOME DO RESTAURANTE VEGANO SER CONTRAFILÉKKKKKKKKK");
