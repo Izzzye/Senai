@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/cadastrar.css">
+    <link rel="shortcut icon" href="../assets/icon.avif" type="image/x-icon">
+    <title>Cadastre-se</title>
+</head>
+<body>
+    <div id="container">
+        <!-- <img src="../assets/seta-esquerda.png" id="voltar" alt=""> -->
+        <img src="../assets/logo.png" id="logo" alt="">
+        <div id="login">
+            <div class="input-container">
+                <input type="text" required="" id="nome">
+                <label>Nome</label>
+            </div>
+
+            <div class="input-container">
+                <input type="text" required="" id="telefone">
+                <label>Telefone</label>
+            </div>
+
+            <div class="input-container">
+                <input type="email" required="" id="email">
+                <label>E-mail</label>
+            </div>
+           
+            <div class="input-container">
+                <input type="text" id="senha" required="">
+                <label>Senha</label>
+            </div>
+            
+            <button id="entrar" onclick="cadastrar()">Cadastrar</button>
+        </div>
+    </div>
+</body>
+<script src="../scripts/cadastrar.js"></script>
+</html>
