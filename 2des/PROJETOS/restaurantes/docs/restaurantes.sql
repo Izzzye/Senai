@@ -6,7 +6,7 @@ CREATE TABLE cliente(
     id INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(50) NOT NULL,
     telefone VARCHAR(15) NOT NULL,
-    email VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL UNIQUE,
     senha VARCHAR(9) NOT NULL
 );
 

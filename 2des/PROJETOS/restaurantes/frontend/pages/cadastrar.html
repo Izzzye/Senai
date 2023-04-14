@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/cadastrar.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../scripts/api.js"></script>
     <link rel="shortcut icon" href="../assets/icon.avif" type="image/x-icon">
     <title>Cadastre-se</title>
 </head>
 <body>
     <div id="container">
-        <!-- <img src="../assets/seta-esquerda.png" id="voltar" alt=""> -->
+        <a href="../pages/login.html">
+            <img src="../assets/seta-esquerda 1.png" id="voltar" alt="">
+        </a>
         <img src="../assets/logo.png" id="logo" alt="">
         <div id="login">
             <div class="input-container">
@@ -29,11 +33,11 @@
             </div>
            
             <div class="input-container">
-                <input type="text" id="senha" required="">
+                <input type="password" id="senha" required="">
                 <label>Senha</label>
             </div>
             
-            <button id="entrar" onclick="cadastrar()">Cadastrar</button>
+            <button id="cadastrar" onclick="cadastrar()">Cadastrar</button>
         </div>
     </div>
 </body>

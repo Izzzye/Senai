@@ -10,8 +10,18 @@ const criar = (req, res) => {
     con.query(cliente.create(), (err, result) => {
         if (err == null)
             res.status(201).end()
-        else
-            res.status(500).json(err).end()
+        else{
+            if(err.code == 'ER_DUP_ENTRY'){
+                res.status(500).json({
+                    err:"Email já cadastrado."
+                }).end()
+            }else{
+                res.status(500).json({
+                    err:err.sqlMessage
+                }).end()
+            }
+        }
+            
     })
 }
 

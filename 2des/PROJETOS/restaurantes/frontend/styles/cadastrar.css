@@ -24,7 +24,7 @@ body{
     width: 400px;
     height: 500px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     background-color: #ffff;
@@ -34,9 +34,21 @@ body{
     box-shadow: 10px 10px #a1a0a0bd;
 }
 
+#voltar{
+    width: 30px;
+    height: auto;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    cursor: pointer;
+}
+
 #logo{
     width: 100px;
     height: auto;
+    position: absolute;
+    top: 52px;
+    left: center;
 }
 
 #login{
@@ -81,7 +93,7 @@ body{
 	font-size:12px;
 }
 
-#cadstrar{
+#cadastrar{
     width: 240px;
     height: 50px;
     border: none;
@@ -93,7 +105,7 @@ body{
     font-weight: 600;
 }
 
-#cadstrar:hover{
+#cadastrar:hover{
     background-color: #ea6f61;
     font-size: 22px;
 }
