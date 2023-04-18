@@ -1,10 +1,14 @@
-const con = require('../dao/connection')
-const Paciente = require('../models/paciente')
+const con = require('../dao/connect')
+const Paciente = require('../models/paciente.model')
 
-const teste = (req, res) => {
-    res.json("Respondendo").end()
+//Método que recebe uma lista e aplica o modelo em todos os elementos
+const modelarLista = (lista) => {
+    for(i = 0; i < lista.length; i++)
+        lista[i] = new Paciente(lista[i])
+    return lista
 }
 
+//Métodos CRUD
 const criar = (req, res) => {
     let paciente = new Paciente(req.body)
     con.query(paciente.create(), (err, result) => {
@@ -18,10 +22,9 @@ const criar = (req, res) => {
 const listar = (req, res) => {
     let paciente = new Paciente(req.params)
     con.query(paciente.read(), (err, result) => {
-        if (err == null)
-            res.json(result).end()
-        else
-            res.status(500).json(err).end()
+        if (err == null){
+            res.json(modelarLista(result)).end()
+        }
     })
 }
 
@@ -43,6 +46,10 @@ const excluir = (req, res) => {
         else
             res.status(404).end()
     })
+}
+
+const teste = (req, res) => {
+    res.json("Avaliação Física Respondendo").end()
 }
 
 module.exports = {

@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const Paciente = require('../controllers/paciente');
+const Paciente = require('../controllers/paciente.controller');
 
 router.get('/', Paciente.teste);
 router.post('/criar', Paciente.criar);
