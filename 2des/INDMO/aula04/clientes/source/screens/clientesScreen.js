@@ -4,7 +4,6 @@ import Clientes from '../mocks/clientesMock'
 import ItemLista from '../components/ItemLista'
 
 export default function ClientesScreen({ navigation }) {
-
     const abrirDetalhes = (dados) => {
         navigation.navigate('Detalhes', { dados });
     }
