@@ -26,15 +26,13 @@ export default function HomeScreen(){
                 <Image style={styles.curso} source={cursos2}></Image>
                 <Image style={styles.curso} source={cursos3}></Image>
             </View>
+
+            <Image style={styles.rodape} source={rodape}></Image>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    container: {
-        
-        
-    },
     header: {
         width: '100vw',
         height: '50px',
@@ -78,5 +76,11 @@ const styles = StyleSheet.create({
     curso: {
         width: '350px',
         height: '120px'
+    },
+    rodape:{
+        width: '100vw',
+        height: '200px',
+        position: 'fixed',
+        bottom: '0px'
     }
 });
