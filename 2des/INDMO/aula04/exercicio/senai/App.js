@@ -13,12 +13,12 @@ export default function App() {
         <Stack.Screen
           name="HomeScreen"
           component={HomeScreen}
-          options={{ title: '', headerTransparent:true }} />
-        {/* <Stack.Screen
+          options={{ title: '', headerTransparent: true }} />
+        <Stack.Screen
           name="CursosScreen"
           component={CursosScreen}
           options={{ title: 'Lista de Cursos' }} />
-        <Stack.Screen
+        {/*<Stack.Screen
           name="DetalhesScreen"
           component={DetalhesScreen}
           options={{ title: 'Detalhes' }} /> */}

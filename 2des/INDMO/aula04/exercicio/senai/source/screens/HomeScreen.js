@@ -8,7 +8,7 @@ import cursos2 from '../../assets/cursos 2.png';
 import cursos3 from '../../assets/cursos 3.png';
 import rodape from '../../assets/rodape.png';
 
-export default function HomeScreen(){
+export default function HomeScreen({navigation}){
     return(
         <View style={styles.container}>
             <View style={styles.header}>
@@ -22,9 +22,19 @@ export default function HomeScreen(){
 
             <View style={styles.list}>
                 <Text style={styles.textList}>Lista de Cursos Senai</Text>
-                <Image style={styles.curso} source={cursos1}></Image>
-                <Image style={styles.curso} source={cursos2}></Image>
-                <Image style={styles.curso} source={cursos3}></Image>
+
+                <TouchableOpacity  onPress={() => {navigation.navigate("CursosScreen",{categoria:'Técnico'})}}>
+                    <Image style={styles.curso} source={cursos1}></Image>
+                </TouchableOpacity>
+
+                <TouchableOpacity onPress={() => {navigation.navigate("CursosScreen",{categoria:'CAI'})}}>
+                    <Image style={styles.curso} source={cursos2}></Image>
+                </TouchableOpacity>
+                
+                <TouchableOpacity onPress={() => {navigation.navigate("CursosScreen",{categoria:'FIC'})}}>
+                   <Image style={styles.curso} source={cursos3}></Image>
+                </TouchableOpacity>
+               
             </View>
 
             <Image style={styles.rodape} source={rodape}></Image>
