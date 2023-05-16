@@ -1,81 +1,91 @@
-# 2. Padrão de desenvolvimento MVC
-- 2.1. Definição
-- 2.2. Aplicabilidade
-- 2.3. Design patterns
-# Design Patterns - GOF
-- Criação
-- Estrutura
-- Comportamento
-<br>![Patterns](patterns.png)
+# Lógica de Programação (Sincrona)
+O JavaScript é uma linguagem **sincrona** isto quer dizer que uma função pode ser executada antes de uma outra ter sido completada.<br>Quando sabemos que uma função pode levar algum tempo para ser concluída e desejamos aguardar a conclusão antes de executar a próxima, chamamos de **assincronicidade** ex:
+- "Enviar uma requisição web e aguardar a resposta"
+- "Salvar dados em um arquivo ou banco de dados local"
 
-## Links importantes
-- (patterns x standard) https://www.youtube.com/watch?v=GUanHEGlje4&t=1440s
-- Slides: https://github.com/wellifabio/senai2021/blob/master/3des/projetos/aula22/design_patterns.pdf
-- Exemplos com Java: https://github.com/wellifabio/senai2022/tree/master/3des/projetos/aula09/exemplo-java
-- POO Classes em JavaScript https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Classes
-
-## Atividades
-### Atividade 1
-|Modele com JavaScript as classes conforme o Diagrama de Classes, utilize o Pattern Builder e os dados a seguir para testar|
+|Para isso utilizamos **Promise** ou Promessa|
 |-|
-|![Atividade 1](atv1-aluguel-veiculo.png)|
+|Aqui está um exemplo de como utilizar **Promise,  async e await** forçando um tempo com **setTimeout**:|
 
-#### Dados para testar:
-
-#### Veículos
-|placa|modelo|marca|ano|idade|diaria|
-|-|-|-|-|:-:|-|
-|JHK-2518|Uno|Fiat|2015|**calcular**|75.9|
-|PBC-5A58|Gol|VW|2018|**calcular**|99.9|
-|CCB-2F19|Celta|Chevrolet|2007|**calcular**|49.9|
-
-#### Aluguéis
-|id|veículo|dataRetirada|dataDevolucao|valorAluguel|
-|-|-|-|-|:-:|
-|1|JHK-2518|2023-04-01|2023-04-06|**calcular**|
-|1|PBC-5A58|2023-04-01|2023-04-08|**calcular**|
-|1|PBC-5A58|2023-04-02|2023-04-07|**calcular**|
-|1|CCB-2F19|2023-04-07|2023-04-16|**calcular**|
-|1|JHK-2518|2023-04-08|2023-04-16|**calcular**|
-
-### Atividade 2
-|Modele com JavaScript as classes conforme o Diagrama de Classes, utilize o Pattern Builder e os dados a seguir para testar, calcule juros de 1% do valor da parcela por dia de atraso|
+```JavaScript
+function tempo(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function facaAlgo() {
+  console.log('Inicio');
+  await tempo(2000); // Aguarda 2000 milissegundos (2 segundos)
+  console.log('Fim');
+}
+facaAlgo();
+```
+|Contexto|
 |-|
-|![Atividade 1](atv2-parcela-compra.png)|
+|Neste exemplo, temos a função **tempo(ms)** que retorna uma **Promise** que é resolvida após um determinado tempo especificado em milissegundos usando **setTimeout()**.<br>A função **facaAlgo()** é definida com a palavra-chave **async**, o que significa que ela retorna uma Promise. Dentro dela, usamos o await para aguardar a resolução da Promise retornada por delay(2000). Durante esse tempo de espera, a execução do código é pausada.<br>No exemplo, o console exibirá **"Inicio"** imediatamente e, em seguida, aguardará **2 segundos** antes de exibir **"Fim"**. Isso ocorre porque o **await** pausa a execução da função facaAlgo() até que a Promise seja resolvida após o tempo especificado.<br>Por fim, a função facaAlgo() é chamada, iniciando o processo assíncrono.|
 
-Dados para testar:
-
-#### Compras
-
-|id|data|produto|cliente|totalParcelas|preco|quantidade|total|
-|-|-|-|-|-|-|-|:-:|
-|1|25/03/2022|TV LCD 4K 50" LG|Jair Santana|4|2800.00|2|**calcular**|
-|2|12/05/2022|TV LCD 4K 50" Sansung|Jurema Santana|2|3100.00|1|**calcular**|
-|3|08/06/2022|TV LCD 4K 50" LG|Mariana Silva|3|2850.00|2|**calcular**|
-|4|17/02/2023|TV LCD 4K 50" Sansung|Marta Oliveira|5|2899.90|1|**calcular**|
-#### Parcelas
-|id|compra|dataVencimento|dataPagamento|valorParcela|Juros|
-|-|-|-|-|-|:-:|
-|1|1|25/04/2022|23/04/2022|**calcular**|**calcular**|
-|2|1|25/05/2022|24/05/2022|**calcular**|**calcular**|
-|3|1|25/06/2022|27/06/2022|**calcular**|**calcular**|
-|4|1|25/07/2022|30/07/2022|**calcular**|**calcular**|
-|5|2|12/06/2022|12/06/2022|**calcular**|**calcular**|
-|6|2|12/07/2022|15/07/2022|**calcular**|**calcular**|
-|7|3|08/07/2022|18/07/2022|**calcular**|**calcular**|
-|8|3|08/08/2022|08/08/2022|**calcular**|**calcular**|
-|9|3|08/09/2022|06/09/2022|**calcular**|**calcular**|
-|10|4|17/03/2023|20/03/2023|**calcular**|**calcular**|
-|11|4|17/04/2023|22/04/2023|**calcular**|**calcular**|
-|12|4|17/05/2023|null|**calcular**|**calcular**|
-|13|4|17/06/2023|null|**calcular**|**calcular**|
-|14|4|17/07/2023|null|**calcular**|**calcular**|
-
-### Atividade 3
-|A partir da atividade 1 Locação de Veículos, agora aplique o Pattern Composite conforme Diagrama de Classes a seguir|
+|**Promise,  async e await**|
 |-|
-|![Atividade 1](atv3-aluguel-veiculo.png)|
-### Atividade 4
-|A partir da atividade 2 Parcelas de Compras, agora aplique o Pattern Composite conforme Diagrama de Classes a seguir|
+|Segue outro exemplo com uma analogia do nosso cotidiano **Promise,  async e await** novamente forçando um tempo com **setTimeout**:|
+
+```JavaScript
+//Exemplo da execução sincronizada JavaScript padrão
+//Função normal com uma simulação de tempo com setTimeout
+function voltarDoBanheiro(aluno){
+    setTimeout(() => console.log(`${aluno.nome} voltou do banheiro`), aluno.tempo);
+}
+//Lista de objetos(Alunos que precisam ir ao banheiro)
+var alunos = [
+        { nome:'Camacho', tempo:3000 },
+        { nome:'Larissa', tempo:2000 },
+        { nome:'Karen', tempo:1000 },
+    ];
+//Função que simula os pedidos sincronos (todos ao mesmo tempo)
+function pedidos(){
+    alunos.forEach(aluno =>{
+        console.log(`${aluno.nome} pede para ir ao banheiro`);
+        voltarDoBanheiro(aluno);
+    });
+}
+pedidos();
+//Exemplo com assincronicidade - Fila para o banheiro
+//Função que retorna uma promessa de que o aluno vai voltar
+function voltarDoBanheiro(aluno){
+    return new Promise(res => {
+        setTimeout(() => {
+            console.log(`${aluno.nome} voltou do banheiro`)
+            res();
+            }, aluno.tempo);
+    });
+}
+//Lista de objetos(Alunos que precisam ir ao banheiro)
+var alunos = [
+        { nome:'Camacho', tempo:3000 },
+        { nome:'Larissa', tempo:2000 },
+        { nome:'Karen', tempo:1000 },
+    ];
+//Função que simula os pedidos assincronos (um de cada vez em fila)
+async function pedidos(){
+    for(let i =0; i < alunos.length; i++){
+        console.log(`${alunos[i].nome} pede para ir ao banheiro`);
+        await voltarDoBanheiro(alunos[i]);
+    };
+}
+pedidos();
+```
+
+|Exercício|
 |-|
-|![Atividade 1](atv4-parcela-compra.png)|
+|Conforme exemplo anterior crie um programa que calcule o **montante** de vários aportes de um investimento conforme os dados a seguir:<br>O programa deverá calcular e mostrar na tela o acúmulo investido e aguardar o tempo de meio segundo entre oe meses|
+```javascript
+aportes = [
+    { mes: 'Janeiro', aporte:500, juros: 0.001 },
+    { mes: 'Fevereiro', aporte:300, juros: 0.003 },
+    { mes: 'Março', aporte:250, juros: 0.005 },
+    { mes: 'Abril', aporte:300, juros: 0.01 },
+    { mes: 'Maio', aporte:100, juros: 0.007 },
+    { mes: 'Junho', aporte:0, juros: 0.005 },
+    { mes: 'Julho', aporte:0, juros: 0.003 },
+    { mes: 'Agosto', aporte:300, juros: 0.008 },
+    { mes: 'Setembro', aporte:400, juros: 0.011 },
+    { mes: 'Outubro', aporte:200, juros: 0.01 },
+]
+```

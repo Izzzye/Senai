@@ -1,11 +1,5 @@
 class Veiculo{
-    placa
-    modelo
-    marca
-    ano
-    idade
-    diaria
-
+  
     constructor(placa, modelo, marca, ano, diaria){
         this.placa = placa
         this.modelo = modelo
@@ -22,12 +16,7 @@ class Veiculo{
 }
 
 class Aluguel{
-    id
-    veiculo
-    dataRetirada
-    dataDevolucao
-    valorAluguel
-
+   
     constructor(id, veiculo, dataRetirada, dataDevolucao){
         this.id = id
         this.veiculo = veiculo
