@@ -1,28 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Rubik:ital,wght@1,300;1,400&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: #0d0a6b;
 }
+
 body{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 header{
     width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ece33a;
+}
+
+#titulo{
+    width: auto;
     height: 10vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid #000;
+    text-decoration: none;
+}
+
+#pizzarrada{
+    font-weight: 700;
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+}
+
+#buttons{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#lado1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 main{
     width: 100%;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 600px;
+   
+}
+
+th, td{
+    text-align: left;
+    padding: 8px;
+}
+
+th{
+    background-color: #0d0a6b;
+    color: #fff;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f2f2f2;
 }
 footer{
     width: 100%;

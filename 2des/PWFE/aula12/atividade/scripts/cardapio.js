@@ -265,7 +265,7 @@ function preencherTabela() {
         id.innerHTML = e.id;
         nome.innerHTML = e.nome;
         preco.innerHTML = e.preco;
-        detalhes.innerHTML = `<button onclick="abrirModal('${i}')">Ver Mais</button>`;
+        detalhes.innerHTML = `<button id="verMais" onclick="abrirModal('${i}')">Ver Mais</button>`;
         linha.appendChild(id);
         linha.appendChild(nome);
         linha.appendChild(preco);

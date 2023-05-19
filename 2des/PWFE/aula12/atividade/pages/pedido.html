@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/pedido.css">
     <link rel="shortcut icon" href="../assets/pizza.png" type="image/x-icon">
-    <link rel="stylesheet" href="../styles/cardapio.css">
-    <title>Pizzarrada Suprema</title>
+    <title>Pedidos</title>
 </head>
-<body onload="preencherTabela()">
+<body>
     <header>
         <div >
             <a href="../pages/cardapio.html" id="titulo">
@@ -28,34 +28,8 @@
         </div>
     </header>
 
-    <section id="card">
-        <h1>CARDÁPIO</h1>
-    </section>
-
     <main>
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th id="nome">Nome</th>
-                    <th id="preco">Preço</th>
-                    <th id="vermais">Ver Mais</th>
-                </tr>
-            </thead>
-
-            <tbody id="tcorpo"></tbody>
-        </table>
+       
     </main>
-    <div id="detalhes" class="modal oculto">
-        <div class="corpoModal">
-            <h1>Detalhes</h1>
-            <button id="btFechar">X</button>
-            <p id="nome"></p>
-            <p id="descricao"></p>
-            <p id="preco"></p>
-            <button id="btCadastrar" onclick="cadastrarLocal()">Add. Carrinho</button>
-        </div>
-    </div>
 </body>
-<script src="../scripts/cardapio.js"></script>
 </html>

@@ -1,33 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Rubik:ital,wght@1,300;1,400&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Caveat', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    color: #0d0a6b;
 }
+
 body{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 header{
     width: 100%;
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ece33a;
+    position: fixed;
+    top: 0;
+
+}
+
+#titulo{
+    width: auto;
     height: 10vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    border-bottom: 1px solid #000;
+    text-decoration: none;
 }
+
+
+#pizzarrada{
+    font-weight: 700;
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+}
+
+#buttons{
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#lado1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    margin-top: 110px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card > h1{
+    font-weight: 700;
+}
+
 main{
     width: 100%;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    background-image: url(../assets/modelo-de-adesivo-com-pizza-isolada_1308-62307.avif);
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: 400px;
+    background-attachment: fixed;
+}
+
+thead{
+    position: fixed;
+    top: 150px;
+    width: 600px;
+    
 }
 
 
+
+table{
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 600px;
+   
+}
+
+th, td{
+    padding: 8px;
+}
+
+td{
+    text-align: left;
+}
+
+#nome{
+    width: 300px;
+}
+
+#preco{
+    width: 110px;
+}
+
+#vermais{
+    width: 200px;
+}
+
+th{
+    background-color: #0d0a6b;
+    color: #fff;
+    text-align: center;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+
+#verMais{
+    background-color: #ece33a;
+    border-color: #e7e164;
+    color: #0d0a6b;
+    border-radius: 10px;
+    width: 80px;
+    height: 20px;
+    cursor: pointer;
+}
+
 .modal{
-    position: absolute;
+    position: fixed;
     top:0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
@@ -40,14 +162,22 @@ main{
 
 .corpoModal{
     position: relative;
-    border: 1px solid #000;
+    border: 2px solid #0d0a6b;
+    border-radius: 20px;
     top: 20vh;
     width: 50vw;
     height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     background-color: #fff;
+}
+
+#btFechar {
+    position: relative;
+    top: 20px;
+    right: 20px;
 }
 
 .oculto{
