@@ -16,7 +16,7 @@ function preecherTabela() {
         total += valor;
         nome.innerHTML = e.nome;
         preco.innerHTML = valor;
-        excluir.innerHTML = `<button onclick="excluirItem('${i}')">X</button>`;
+        excluir.innerHTML = `<button  id="excluir" onclick="excluirItem('${i}')">X</button>`;
         linha.appendChild(nome);
         linha.appendChild(preco);
         linha.appendChild(excluir);

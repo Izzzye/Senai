@@ -276,15 +276,15 @@ function preencherTabela() {
 
 function abrirModal(i){
     detalhes.classList.toggle("oculto");
-    document.querySelector("#nome").innerHTML = dados[i].nome;
+    document.querySelector("#mnome").innerHTML = dados[i].nome;
     document.querySelector("#descricao").innerHTML = dados[i].descricao;
-    document.querySelector("#preco").innerHTML = dados[i].preco;
+    document.querySelector("#mpreco").innerHTML = dados[i].preco;
 }
 
 function cadastrarLocal(){
     const item = {
-        nome: document.querySelector("#nome").innerHTML,
-        preco: document.querySelector("#preco").innerHTML
+        nome: document.querySelector("#mnome").innerHTML,
+        preco: document.querySelector("#mpreco").innerHTML
 
     }
 

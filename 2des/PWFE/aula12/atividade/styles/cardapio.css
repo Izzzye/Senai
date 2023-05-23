@@ -97,9 +97,6 @@ thead{
     width: 600px;
     
 }
-
-
-
 table{
     border-collapse: collapse;
     width: 90%;
@@ -172,14 +169,55 @@ tbody tr:nth-child(even){
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
+    padding: 50px;
 }
 
 #btFechar {
-    position: relative;
-    top: 20px;
-    right: 20px;
+    position: fixed;
+    top: 210px;
+    right: 550px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#btFechar:hover{
+   background-color: rgb(227, 4, 4);
+}
+
+#btCadastrar{
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #ece33a;
+    border-color: #e7e164;
+    color: #0d0a6b;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#btCadastrar:hover{
+    background-color: #fef54c;
+    border-color: #ece33a;
 }
 
 .oculto{
     display: none;
+}
+
+#mnome{
+    font-size: 25px;
+}
+#descricao{
+    font-size: 20px;
+}
+
+#mpreco{
+    font-size: 25px;
 }

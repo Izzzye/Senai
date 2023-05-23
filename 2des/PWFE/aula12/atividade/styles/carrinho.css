@@ -56,6 +56,22 @@ header{
     justify-content: center;
     align-items: center;
 }
+
+#card{
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    margin-top: 110px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card > h1{
+    font-weight: 700;
+}
+
 main{
     width: 100%;
     height: auto;
@@ -86,13 +102,51 @@ th{
 tbody tr:nth-child(even){
     background-color: #f2f2f2;
 }
+
+#excluir{
+    background-color: red;
+    border-color: rgb(205, 22, 22);
+    color: #0d0a6b;
+    border-radius: 10px;
+    width: 80px;
+    height: 20px;
+    cursor: pointer;
+    color: #f2f2f2;
+    font-weight: 700;
+}
 footer{
     width: 100%;
     height: 10vh;
+    position: fixed;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
     border-top: 1px solid #000;
+   background-color: #0d0a6b;
+}
+
+footer > button{
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #ece33a;
+    border-color: #e7e164;
+    color: #0d0a6b;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+footer > button:hover{
+    background-color: #fef54c;
+    border-color: #ece33a;
+}
+
+#valorTotal{
+    font-size: 25px;
+    color: #f2f2f2;
+    font-weight: 700;
 }
 
 .modal{
