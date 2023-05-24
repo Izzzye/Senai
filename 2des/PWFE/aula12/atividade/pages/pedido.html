@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../assets/pizza.png" type="image/x-icon">
     <title>Pedidos</title>
 </head>
-<body>
+<body onload="preencherTabela()">
     <header>
         <div >
             <a href="../pages/cardapio.html" id="titulo">
@@ -33,7 +33,18 @@
     </section>
 
     <main>
-       
+        <table>
+            <thead>
+                <tr>
+                    <th id="data">Data</th>
+                    <th id="pedido">Pedido</th>
+                    <th id="total">Preço</th>
+                </tr>
+            </thead>
+
+            <tbody id="tcorpo"></tbody>
+        </table>
     </main>
 </body>
+<script src="../scripts/pedido.js"></script>
 </html>

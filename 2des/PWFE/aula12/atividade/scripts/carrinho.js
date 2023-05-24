@@ -3,9 +3,10 @@ const totalCarrinho = document.querySelector("#valorTotal")
 
 const produtos = JSON.parse(window.localStorage.getItem("produtos")) || []
 
+var total = 0;
 
 function preecherTabela() {
-    let total = 0;
+   
 
     produtos.forEach((e, i) => {
         const linha = document.createElement("tr");
@@ -34,4 +35,25 @@ function excluirItem(i){
 function limparDados(){
     window.localStorage.removeItem("produtos");
     window.location.reload();
+}
+
+function finalizarCompra(){
+    const item = {
+        data: new Date(),
+        pizzas: produtos,
+        total: total.toFixed(2)
+
+    }
+
+    const pedidos = JSON.parse(window.localStorage.getItem("pedidos")) || []
+  
+    pedidos.push(item)
+
+    window.localStorage.setItem("pedidos",JSON.stringify(pedidos))
+    
+    window.location.reload()
+
+    window.location.href = "./pedido.html"
+
+    window.localStorage.removeItem("produtos");
 }
