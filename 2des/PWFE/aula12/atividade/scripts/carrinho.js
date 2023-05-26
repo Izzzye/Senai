@@ -7,7 +7,6 @@ var total = 0;
 
 function preecherTabela() {
    
-
     produtos.forEach((e, i) => {
         const linha = document.createElement("tr");
         const nome = document.createElement("td");
