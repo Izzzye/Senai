@@ -16,7 +16,7 @@
     <main>
         <form id="acesso">
             <label for="email">Email:</label>
-            <input type="email" name="email" id="email" value="passos@email.com">
+            <input type="email" name="email" id="email" value="ana@email.com">
             <label for="senha">Senha:</label>
             <input type="password" name="senha" id="senha" value="Zaq1@wsx">
             <button type="submit">Entrar</button>
@@ -46,14 +46,20 @@
             //converte a senha em md5
             const senhaMd5 = md5(senha);
             //faz a requisição para o servidor
-            fetch('./mockup.json')
+            fetch(`./mockup.json`)
                 .then(resposta => resposta.json())
                 .then(dados => {
-                    console.log(dados);
-                    //verifica se o usuário e a senha estão corretas
-                    if (dados.email === email && dados.senha === senhaMd5.toString()) {
-                        //redireciona para a página de perfil
-                        window.location.href = `perfil.html?id=${dados.id}`;
+                    let id = 0;
+                    //Percorre a lista de usuários
+                    dados.forEach(e => {
+                        //verifica se o usuário e a senha estão corretas
+                        if (e.email === email && e.senha === senhaMd5.toString()) {
+                            id = e.id;
+                        }
+                    });
+                    //redireciona para a página de perfil
+                    if (id != 0) {
+                        window.location.href = `perfil.html?id=${id}`;
                     } else {
                         //exibe a mensagem de erro
                         erro.textContent = 'Usuário não encontrado';
