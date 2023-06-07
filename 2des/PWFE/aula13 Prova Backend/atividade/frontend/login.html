@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Acesso ao Perfil</title>
+</head>
+
+<body>
+    <header>
+        <h1>Acesso ao perfil</h1>
+    </header>
+    <main>
+        <form id="acesso">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" value="passos@email.com">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" value="PassinhosFelizes69">
+            <button type="submit">Entrar</button>
+        </form>
+    </main>
+    <footer>
+        <h2 id="erro"></h2>
+    </footer>
+</body>
+
+
+
+<script>
+    const acesso = document.getElementById('acesso');
+    acesso.addEventListener('submit', function (evento) {
+        evento.preventDefault();
+
+        //Tratar mensagem de erro ao invez de alert
+        const erro = document.getElementById('erro');
+
+        const dados = {
+            email: acesso.email.value,
+            senha: acesso.senha.value
+        }
+
+        const options = {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(dados)
+        };
+
+        fetch(`http://localhost:3000/usuarios`, options)
+            .then(resp => resp.json())
+            .then(resp => {
+                if (resp.length > 0) {
+
+                    window.localStorage.setItem('dados', JSON.stringify(resp[0]))
+                    window.location.href = `perfil.html`;
+                } else {
+                    //exibe a mensagem de erro
+                    erro.textContent = 'Usuário não encontrado';
+                }
+            })
+            .catch(erro => {
+                //exibe a mensagem de erro
+                erro.textContent = 'Erro ao acessar o servidor';
+            });
+
+    });
+</script>
+
+</html>

@@ -47,40 +47,31 @@
         <h2 id="erro"></h2>
     </footer>
 </body>
+
+
 <script>
-    //Pegar dados da query
-    const urlParams = new URLSearchParams(window.location.search);
-    const id = urlParams.get('id');
-    console.log(id);
-    //Abrir o mockup local com fetch
-    fetch('./mockup.json')
-        .then(resposta => resposta.json())
-        .then(dados => {
-            let dado = null;
-            dados.forEach(e => {
-                if (e.id == id) {
-                    dado = e;
-                }
-            });
-            if (dado !== null) {
-                //Preencher os campos do formulário com os dados do mockup
-                const perfil = document.getElementById('perfil');
-                perfil.id.value = dado.id;
-                perfil.nome.value = dado.nome;
-                perfil.cpf.value = dado.cpf;
-                perfil.email.value = dado.email;
-                perfil.nascimento.value = dado.nascimento;
-                perfil.cep.value = dado.endereco.cep;
-                perfil.numero.value = dado.endereco.numero;
-                perfil.complemento.value = dado.endereco.complemento;
-                perfil.telefones.value = dado.telefones;
-            } else {
-                document.getElementById('erro').innerHTML = 'Usuário não encontrado';
-            }
-        })
-        .catch(erro => {
-            console.log(erro);
-        });
+
+    const dado = window.localStorage.getItem("dados") == undefined? null : JSON.parse( window.localStorage.getItem("dados"))
+    if (dado !== null) {
+        //Preencher os campos do formulário com os dados do mockup
+        const perfil = document.getElementById('perfil');
+        perfil.id.value = dado.id;
+        perfil.nome.value = dado.nome;
+        perfil.cpf.value = dado.cpf;
+        perfil.email.value = dado.email;
+        perfil.nascimento.value =  dado.nascto.split('T')[0];
+        perfil.cep.value = dado.endereco.cep;
+        perfil.numero.value = dado.endereco.numero;
+        perfil.complemento.value = dado.endereco.complemento;
+        perfil.telefones.value = dado.telefones;
+
+        //Remover os dados do local storage por segurança
+        window.localStorage.removeItem("dados")
+
+    } else {
+        document.getElementById('erro').innerHTML = 'Usuário não encontrado';
+    }
+
 </script>
 
 </html>
