@@ -10,7 +10,7 @@ class Usuario{
         this.endereco.cep = obj.cep
         this.endereco.numero = obj.numero
         this.endereco.complemento = obj.complemento
-        this.telefones = obj.telefones == undefined ? [] : obj.telefones.split(',')
+        this.telefones = obj.telefones
     }
 
     read(){
@@ -22,8 +22,7 @@ class Usuario{
     }
 
     update(){
-        return `UPDATE usuarios SET nome = '${this.nome}', cpf = '${this.cpf}',email = '${this.email}',senha = '${this.senha}',
-        nascto = '${this.nascto}',cep = '${this.endereco.cep}', numero = '${this.endereco.numero}',complemento = '${this.endereco.complemento}' WHERE id = ${this.id}`;
+        return `UPDATE user SET nome = '${this.nome}', cpf = '${this.cpf}', email = '${this.email}', senha = '${this.senha}', nascto = '${this.nascto}', cep = '${this.endereco.cep}', numero = '${this.endereco.numero}', complemento = '${this.endereco.complemento}' WHERE id = ${this.id}`;
     }
 
     
