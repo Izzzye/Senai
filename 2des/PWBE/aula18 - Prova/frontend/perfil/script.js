@@ -10,6 +10,8 @@ function carregar(){
     let numero = document.querySelector("#numero")
     let complemento = document.querySelector("#complemento")
     let telefones = document.querySelector("#telefones")
+    let senha = document.querySelector("#senha")
+    let confirmacao = document.querySelector("#confirmacao")
 
     fetch("http://localhost:3000/usuarios")
     .then((response) => {
@@ -27,6 +29,7 @@ function carregar(){
             numero.value = cliente.endereco.numero
             complemento.value = cliente.endereco.complemento
             telefones.value = cliente.telefones
+          
         }
 
         })
@@ -35,33 +38,41 @@ function carregar(){
 }
 
 function salvar(){
+    let senha = document.querySelector("#senha")
+    let confirmacao = document.querySelector("#confirmacao")
  
     let dados = {
       "id": document.querySelector("#id").value,
       "nome": document.querySelector("#nome").value,
       "cpf": document.querySelector("#cpf").value,
       "email": document.querySelector("#email").value,
-      "nascimento": (document.querySelector("#nascimento").value).split('T')[0],
+      "nascto": document.querySelector("#nascimento").value,
       "cep": document.querySelector("#cep").value,
       "numero": document.querySelector("#numero").value, 
       "complemento": document.querySelector("#complemento").value,
-      "telefones": document.querySelector("#telefones").value
+      "telefones": document.querySelector("#telefones").value,
+      "senha": document.querySelector("#senha").value
     };
     
     // Enviar os dados para o banco de dados...
     
-    const options = {
-        method: 'PUT',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(dados)
-      };
-      
-      fetch('http://localhost:3000/usuarios', options)
-        .then(response => response.json())
-        .then(response => console.log(response))
-        .catch(err => console.error(err));
-    
-    alert('Dados Alterados')
+    if(senha.value  != confirmacao.value){
+        alert('As Senhas Não Correspondem.')
+    }else{
+
+        const options = {
+            method: 'PUT',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(dados)
+          };
+          
+          fetch('http://localhost:3000/usuarios', options)
+            .then(response => response.json())
+            .then(response => console.log(response))
+            .catch(err => console.error(err));
+
+        alert("Dados Alterados com Sucesso!")
+    }
 
     console.log(JSON.stringify(dados));
 
