@@ -1,12 +1,25 @@
-import { StatusBar } from 'expo-status-bar';
-import { Text, View } from 'react-native';
-import styles from './style';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
-export default function MainScreen() {
+export default function MainScreen({navigation}) {
+  const proximo = ()=>{
+    navigation.navigate("PerguntasScreen")
+  }
   return (
     <View style={styles.container}>
-      <Text>Quiz - To be</Text>
-      <StatusBar style="auto" />
+      <Text>Quiz</Text>
+      
+      <TouchableOpacity onPress={() => proximo()}>
+        <Text>Proximo</Text>
+      </TouchableOpacity>
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
