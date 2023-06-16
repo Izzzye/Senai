@@ -1,26 +1,25 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
-export default function ResultScreen({navigation, route}) {
-  const proximo = ()=>{
+export default function ResultScreen({ navigation, route }) {
+  const proximo = () => {
     navigation.navigate("MainScreen")
   }
 
-  const { acertos } = route.params;
-
+  const { acertos, erros, totalPerguntas } = route.params;
   let res;
 
-  if(acertos >= 5){
+  if (acertos >= 5) {
     res = "Aprovado"
-  }else{
+  } else {
     res = "Reprovado"
   }
 
   return (
     <View style={styles.container}>
       <Text>Resultado</Text>
-      <Text>Total: 10</Text>
+      <Text>Total: {totalPerguntas}</Text>
       <Text>Acertos: {acertos}</Text>
-      <Text>Erros: {10 - acertos}</Text>
+      <Text>Erros: {erros}</Text>
       <Text>{res}</Text>
 
       <TouchableOpacity onPress={() => proximo()}>
