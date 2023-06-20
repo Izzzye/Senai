@@ -1,7 +1,5 @@
 import { StyleSheet } from 'react-native';
 
-const font1 = "https://amaluz.com.br/wp-content/uploads/2022/09/planet-wallpaper.jpg" 
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -19,8 +17,21 @@ const styles = StyleSheet.create({
     },
     titulo: {
         color: '#fff',
-        fontSize: 50,
-        fontFamily: font1
+        fontSize: 60,
+        paddingBottom: 20
+    },
+    button: {
+        width: 180,
+        height: 35,
+        backgroundColor: "#318CE7",
+        borderRadius: 20,
+        justifyContent: "center",
+        alignItems: "center"
+    },
+    textButton: {
+        color: "#ffff",
+        fontWeight: 700,
+        fontSize: 28
     }
 });
 

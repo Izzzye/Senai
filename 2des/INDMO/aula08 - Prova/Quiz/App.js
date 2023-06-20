@@ -13,17 +13,17 @@ export default function App() {
         <Stack.Screen
           name="MainScreen"
           component={MainScreen}
-          options={{ title: 'Quiz' }}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="PerguntasScreen"
           component={PerguntasScreen}
-          options={{ title: 'Perguntas' }}
+          options={{ title: 'Perguntas', headerTintColor: "#13293d"}}
         />
         <Stack.Screen
           name="ResultScreen"
           component={ResultScreen}
-          options={{ title: 'Resultado' }}
+          options={{ title: 'Resultado',  headerTintColor: "#13293d" }}
         />
       </Stack.Navigator>
     </NavigationContainer>

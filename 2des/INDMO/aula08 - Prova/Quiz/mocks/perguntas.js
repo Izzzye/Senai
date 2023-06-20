@@ -68,7 +68,7 @@ const perguntas = [
         respostas: [
             { resp: "Produzir oxigênio.", status: false },
             { resp: "Evitar que caiam meteoros na Terra.", status: false },
-            { resp: "Filtrar a radiação solar em alguns comprimentos de onda capazes de causar câncer.", status: true }
+            { resp: "Filtrar a radiação solar em alguns comprimentos de onda.", status: true }
         ]
     },
     {
