@@ -1,12 +1,11 @@
 const { PrismaClient } = require('@prisma/client')
-
 const prisma = new PrismaClient();
 
 const readAll = async (req, res) => {
     let alocacao = await prisma.alocacao.findMany({
         where: {
             quantidade: {
-                not: 0
+                gte: 0
             }
         },
     });
@@ -18,7 +17,7 @@ const readArea = async (req, res) => {
         by: ['area'],
         where: {
             quantidade: {
-                not: 0
+                gte: 0
             }
         },
     });
